@@ -2,9 +2,9 @@
 class DB {
 
         private static function connect() {
-                $pdo = new PDO('mysql:host=localhost;dbname=id5357600_luxuryspasauna;charset=utf8', 'id5357600_admin', 'salasana');
-                $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                return $pdo;
+            $pdo = new PDO('mysql:host=127.0.0.1;dbname=luxuryspasauna;charset=utf8', 'root', '');
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            return $pdo;
         }
 
         public static function query($query, $params = array()) {
